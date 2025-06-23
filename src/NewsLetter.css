@@ -1,0 +1,44 @@
+.newsletterSec{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(211, 211, 211);
+}
+
+.newsletterSec img{
+    position: relative;
+    right: 5%;
+    /* border: 2px solid black; */
+}
+
+.newletterInfo{
+    color: black;
+    position: relative;
+    left: 5%;
+}
+
+.inputEmail input{
+    width: 650px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.inputEmail input::placeholder{
+    position: relative;
+    left: 10px;
+}
+
+.newsButton{
+    background: black;
+    position: relative;
+    left: 273px;
+    border-radius: 10px;
+    bottom: 44.5px;
+}
+
+.newsButton:hover{
+    border: 2px solid white;
+}

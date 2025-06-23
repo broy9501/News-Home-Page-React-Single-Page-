@@ -1,0 +1,85 @@
+.footerSection{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 40px;
+    height: 300px;
+    font-family: Arial, sans-serif;
+    margin-top: 150px;
+    width: 1825px;
+    position: relative;
+    right: 315px;
+    margin-bottom: -35px;
+}
+
+.listOfContent{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    position: relative;
+    left: 250px;
+    /* border: 2px solid white; */
+}
+
+.findUs, .Links, .Social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 200px;
+}
+
+.findUs h2, .Links h2, .Social h2{
+    color: grey;
+}
+
+.findUs span, .Links a, .Social a{
+    margin-top: 10px;
+    color: white;
+}
+
+.Links{
+    position: relative;
+    top: 20px;
+}
+
+.Social{
+    position: relative;
+    bottom: 10px;
+}
+
+.contactUsButton{
+    position: relative;
+    left: 100px;
+    border: 2px solid white;
+    padding: 20px;
+    width: 150px;
+    display: inline-block;
+}
+
+.contactUsButton a{
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: block; 
+}
+
+.contactUsButton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 65px;
+    background: white;
+    z-index: 1;
+    transition: width 0.3s ease-in-out;
+}
+
+.contactUsButton:hover::after{
+    width: 100%;
+    color: black;
+}
+
+.contactUsButton a:hover, .contactUsButton:hover a{
+    color: black;
+}

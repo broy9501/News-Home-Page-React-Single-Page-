@@ -1,0 +1,390 @@
+.welcomeTitle{
+  color: black;
+  position: relative;
+  top: 120px;
+  right: 56%;
+}
+
+.mainNewsSection {
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 40px;
+  border-bottom: 2px solid rgb(211, 211, 211);
+}
+
+.newsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 120px auto;
+  position: relative;
+  right: 250px;
+  padding: 20px;
+}
+
+.newsCard {
+  position: relative;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  height: 350px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  width: 500px;
+  transition: 0.5s ease-in-out;
+}
+
+.newsCard:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.newsCard:hover .newsItem {
+  height: 300px;
+  top: 50px;
+  background: rgb(27, 27, 27, 0.5);
+}
+
+.newsCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.newsItem {
+  height: 120px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%; 
+  background: rgba(27, 27, 27, 0.5);
+  color: white;
+  bottom: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.newsItem h2 {
+  margin: 10px;
+  font-size: 25px;
+}
+
+.newsItem p,
+.newsItem a,
+.newsItem span,
+.newsItem h3 {
+  font-size: 18px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.newsCard:hover .newsItem p,
+.newsCard:hover .newsItem a,
+.newsCard:hover .newsItem span,
+.newsCard:hover .newsItem h3 {
+  visibility: visible;
+  opacity: 1;
+  color: white;
+}
+
+
+.newsCard:hover .newsItem a,
+.newsCard:hover .newsItem span{
+  position: relative;
+  bottom: 10px;
+}
+
+.newsCard:hover img {
+  transform: scale(1.1);
+}
+
+
+.newsCard:first-child{
+  width: 700px;
+}
+
+.newsCard:nth-child(4) {
+  grid-column-start: 2;
+}
+
+.newsCard:nth-child(5) {
+  grid-column-start: 3;
+}
+
+.scienceNews{
+  margin-top: 50px;
+  border-bottom: 2px solid rgb(211, 211, 211);
+  padding-bottom: 220px;
+}
+
+.listofSciNews {
+  display: flex;
+  position: relative;
+  height: 803px;
+  right: 250px;
+}
+
+.mainSci{
+  box-shadow: 5px 5px 20px black;
+  border: 2px solid white;
+  transition: border 0.5s ease-in-out;
+}
+
+.mainSci:hover{
+  border: 2px solid black;
+}
+
+.mainSci img{
+  height: 800px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.moreInfoSci{
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 25px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border 0.5s ease-in-out;
+}
+
+.moreInfoSci:hover{
+  border: 2px solid white;
+}
+
+.subMoreInfoSci{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  right: 165px;
+}
+
+.subMoreInfoSci a{
+  position: relative;
+  right: 150px;
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.subSciListNews{
+  margin-top: 2px;
+}
+
+.sciSubCard{
+  width: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.sciSubCard img{
+  width: 580px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 1;
+  object-position: 50% 22%;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+
+.sciSubCard img:hover{
+  transform: scale(1.05);
+  bottom: 10px;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+}
+
+.subInfoSci:hover{
+  background-color: black;
+}
+
+.subInfoSci{
+  background: black;
+  color: white;
+  width: 580px;
+  bottom: 7px;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.subInfoSci a{
+  color: white;
+  position: relative;
+  bottom: 10px;
+  text-transform: none;
+}
+
+.subInfoSci a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.subInfoSci a:hover::after{
+  width: 100%;
+}
+
+.ScienceTitle{
+  color: black;
+  position: relative;
+  right: 57%;
+}
+
+.ArtTitle{
+  color: black;
+  position: relative;
+  right: 59%;
+}
+
+.artSection{
+  color: black;
+  margin-bottom: 60px;
+}
+
+.leftArtCard{
+  margin-top: 50px;
+}
+
+.leftArtCard img{
+  width: 580px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 1;
+  object-position: 50% 22%;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.leftArtCard img:hover{
+  transform: scale(1.05);
+  bottom: 10px;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+}
+
+
+.leftArtCardInfo{
+  background: black;
+  color: white;
+  width: 580px;
+  bottom: 7px;
+  padding-bottom: 20px;
+  left: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftArtCardInfo a{
+  color: white;
+  text-decoration: none;
+}
+
+.leftArtCardInfo a::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.leftArtCardInfo a:hover::after{
+  width: 13.8%;
+}
+
+.leftArt{
+  display: flex;
+  flex-direction: column;
+}
+
+.leftArtSide{
+  position: relative;
+  right: 240px;
+  bottom: 30px;
+}
+
+.artSection{
+  display: flex;
+}
+
+.mainArt{
+  position: relative;
+  right: 190px;
+  top: 18px;
+  margin-bottom: 100px;
+  border: 2px solid white;
+  box-shadow: 5px 5px 20px black;
+  transition: border 0.5s ease-in-out;
+}
+
+.mainArt:hover{
+  border: 2px solid black;
+}
+
+.mainArt img{
+  height: 950px;
+  width: 1160px;
+  object-fit: fill;
+}
+
+.moreInfoArt{
+  background: black;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 25px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border 0.5s ease-in-out;
+}
+
+.moreInfoArt:hover{
+  border: 2px solid white;
+}
+
+.subMoreInfoArt{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  right: 120px;
+}
+
+.subMoreInfoArt a{
+  position: relative;
+  right: 120px;
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.artNews{
+  border-bottom: 2px solid rgb(211, 211, 211);
+  margin-bottom: 50px;
+}
